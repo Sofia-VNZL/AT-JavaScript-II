@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Loja de Mangás</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Loja de Mangás</h1>
+    <div class="container">
+      <div class="inputs">
+        <label for="nomeSolicitante">Nome do Solicitante:</label><br />
+        <input
+          type="text"
+          id="nomeSolicitante"
+          placeholder="Nome do solicitante"
+        /><br /><br />
+
+        <label for="emailSolicitante">Email do Solicitante:</label><br />
+        <input
+          type="text"
+          id="emailSolicitante"
+          placeholder="Email do solicitante"
+        /><br /><br />
+
+        <button onclick="criarPedido()">Criar Pedido</button>
+        <button onclick="editarPedido()">Editar Pedido</button>
+        <button onclick="alterarStatusPedidoHTML()">
+          Alterar Status do Pedido</button
+        ><br />
+        <button onclick="excluirPedido()">Excluir Pedido</button>
+      </div>
+
+      <div class="lista-mangas">
+        <ul>
+          <li>codigo: 101 - One Piece Vol. 1 - R$ 19.9</li>
+          <li>codigo: 102 - Naruto Vol. 1 - R$ 18.5</li>
+          <li>codigo: 103 - Dragon Ball Vol. 1 - R$ 20.0</li>
+          <li>codigo: 104 - Attack on Titan Vol. 1 - R$ 22.9</li>
+          <li>codigo: 105 - Fullmetal Alchemist Vol. 1 - R$ 19.9</li>
+          <li>codigo: 106 - Bleach Vol. 1 - R$ 21.5</li>
+          <li>codigo: 107 - Demon Slayer Vol. 1 - R$ 23.0</li>
+          <li>codigo: 108 - Death Note Vol. 1 - R$ 17.9</li>
+          <li>codigo: 109 - My Hero Academia Vol. 1 - R$ 24.0</li>
+          <li>codigo: 110 - Jujutsu Kaisen Vol. 1 - R$ 25.0</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="pedidos"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
